@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="ham-menu">
+        <label for="ham-menu">
+            <div class="hide-des">
+                <h4 style="padding-top:18px">Menu</h4>
+            </div>
+
+        </label>
+        <div class="full-page-green"></div>
+        <div class="ham-menu">
+            <ul class="centre-text bold-text">
+                <a href="index.html">Calculate Area</a>
+                <a href="hypotenuse.html">Calculate Hypotenuse</a>
+                <a href="isTriangle.html" class="item-active">Is Traingle Valid</a>
+                <a href="quiz.html">Quiz</a>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Is Triangle Valid ?</h2>
+        <label for="angle1">angle1</label>
+        <input type="number" id="angle1" name="angle1" class="input-angle">
+        <label for="angle2">angle2</label>
+        <input type="number" id="angle2" name="angle2" class="input-angle">
+        <label for="angle3">angle3</label>
+        <input type="number" id="angle3" name="angle3" class="input-angle">
+        <button id="is-triangle-btn">Check</button>
+        <div id="output"></div>
+    </div>
+    <script src="isTriangle.js">
+    </script>
+</body>
+
+</html>
