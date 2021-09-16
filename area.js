@@ -10,8 +10,11 @@ function calculateArea(a,b) {
 
 function printArea() {
     const areaOfTriangle = calculateArea(Number(inputs[0].value),Number(inputs[1].value));
-    console.log(areaOfTriangle);
-    outputElement.innerText = "Area of triangle is : " + areaOfTriangle;
+    if(Number(inputs[0].value) <= 0 || Number(inputs[1].value) <= 0){
+        outputElement.innerText = "Please input properly";
+    } else{
+        outputElement.innerText = "Area of triangle is : " + areaOfTriangle;
+    }
 }
 
 areaBtn.addEventListener("click",printArea);
