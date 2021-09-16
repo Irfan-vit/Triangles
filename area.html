@@ -14,12 +14,14 @@
     <h1 id="go-back"><a href="index.html">Go back</a></h1>
 
     <div class="container">
-        <h2>Calculate Area</h2>
-        <label>base : </label>
-        <input type="number" class="area-input" min="1" required>
-        <label>height : </label>
-        <input type="number" class="area-input" min="1" required>
-        <button id="area-button">Calculate Area</button>
+        <form action="" onsubmit="return false">
+            <h2>Calculate Area</h2>
+            <label>base : </label>
+            <input type="number" class="area-input" min="1" required>
+            <label>height : </label>
+            <input type="number" class="area-input" min="1" required>
+            <button id="area-button">Calculate Area</button>
+        </form>
         <div id="output"></div>
     </div>
     <script src="area.js"></script>
